@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+    <!-- (1) 포탈 레이아웃-->
+    <definition name="portal" template="/WEB-INF/jsp/tiles/baseLayout.jsp">
+        <put-attribute name="title" value="Nadak" />
+        <put-attribute name="header" value="/WEB-INF/jsp/tiles/baseHeader.jsp" />
+        <put-attribute name="top" value="/WEB-INF/jsp/tiles/baseTop.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/jsp/tiles/baseFooter.jsp" />
+    </definition>
+
+    <!-- (1) -->
+    <definition name="/portal/*" extends="portal">
+        <put-attribute name="body" value="/WEB-INF/jsp/portal/{1}.jsp" />
+    </definition>
+
+    <!-- (2) -->
+    <definition name="/portal/*/*" extends="portal">
+        <put-attribute name="body" value="/WEB-INF/jsp/portal/{1}/{2}.jsp" />
+    </definition>
+
+</tiles-definitions>

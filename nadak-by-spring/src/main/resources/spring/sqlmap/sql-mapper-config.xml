@@ -14,6 +14,7 @@
 
     <typeAliases>
         <typeAlias alias="SampleVO" type="com.base.nadak.sample.vo.SampleVO"/>
+        <typeAlias alias="MemberVO" type="com.base.nadak.member.vo.MemberVO"/>
     </typeAliases>
 
 </configuration>

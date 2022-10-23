@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <logger name="jdbc.sqlonly" level="OFF" />
+    <logger name="jdbc.sqltiming" level="INFO" />
+    <logger name="jdbc.audit" level="OFF" />
+    <logger name="jdbc.resultset" level="OFF" />
+    <logger name="jdbc.resultsettable" level="OFF" />
+    <logger name="jdbc.connection" level="OFF" />
+
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <charset>UTF-8</charset>
+            <pattern>%date{yyyyMMdd HH:mm:ss.SSS} [%class][%method]%m%n</pattern>
+        </encoder>
+    </appender>
+
+</configuration>

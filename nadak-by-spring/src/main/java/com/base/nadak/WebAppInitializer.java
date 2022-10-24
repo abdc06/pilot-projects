@@ -40,9 +40,9 @@ public class WebAppInitializer implements WebApplicationInitializer {
     private void addFilters(ServletContext servletContext) {
         FilterRegistration.Dynamic characterEncodingFilter = servletContext.addFilter("characterEncodingFilter", CharacterEncodingFilter.class);
         characterEncodingFilter.setInitParameter("encoding", "UTF-8");
-        characterEncodingFilter.addMappingForUrlPatterns(null, false, "/");
+        characterEncodingFilter.addMappingForUrlPatterns(null, false, "/*");
 
         FilterRegistration.Dynamic htmlTagFilter = servletContext.addFilter("htmlTagFilter", HTMLTagFilter.class);
-        htmlTagFilter.addMappingForUrlPatterns(null ,false, "/");
+        htmlTagFilter.addMappingForUrlPatterns(null ,false, "/*");
     }
 }

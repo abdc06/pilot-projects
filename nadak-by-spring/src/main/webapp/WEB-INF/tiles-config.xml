@@ -11,6 +11,14 @@
         <put-attribute name="footer" value="/WEB-INF/jsp/tiles/baseFooter.jsp" />
     </definition>
 
+    <!-- (2) 관리자 레이아웃-->
+    <definition name="admin" template="/WEB-INF/jsp/tiles/adminLayout.jsp">
+        <put-attribute name="title" value="Administrator " />
+        <put-attribute name="header" value="/WEB-INF/jsp/tiles/adminHeader.jsp" />
+        <put-attribute name="top" value="/WEB-INF/jsp/tiles/adminTop.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/jsp/tiles/adminFooter.jsp" />
+    </definition>
+
     <!-- (1) -->
     <definition name="/portal/*" extends="portal">
         <put-attribute name="body" value="/WEB-INF/jsp/portal/{1}.jsp" />
@@ -19,6 +27,16 @@
     <!-- (2) -->
     <definition name="/portal/*/*" extends="portal">
         <put-attribute name="body" value="/WEB-INF/jsp/portal/{1}/{2}.jsp" />
+    </definition>
+
+    <!-- (1) -->
+    <definition name="/admin/*" extends="admin">
+        <put-attribute name="body" value="/WEB-INF/jsp/admin/{1}.jsp" />
+    </definition>
+
+    <!-- (2) -->
+    <definition name="/admin/*/*" extends="admin">
+        <put-attribute name="body" value="/WEB-INF/jsp/admin/{1}/{2}.jsp" />
     </definition>
 
 </tiles-definitions>

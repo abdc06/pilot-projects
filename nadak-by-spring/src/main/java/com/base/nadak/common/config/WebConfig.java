@@ -18,6 +18,13 @@ import org.springframework.web.servlet.view.tiles3.TilesView;
 public class WebConfig implements WebMvcConfigurer {
 
     @Override
+    public void addResourceHandlers(ResourceHandlerRegistry registry) {
+        registry.addResourceHandler("/assets/**")
+                .addResourceLocations("classpath:/assets/")
+                .setCachePeriod(20);
+    }
+
+    @Override
     public void addViewControllers(ViewControllerRegistry registry) {
         registry.addViewController("/").setViewName("forward:/portal/main");
     }

@@ -14,7 +14,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="format-detection" content="telephone=no">
 <!-- css -->
-
+<link rel="stylesheet" href="<c:url value='/assets/admin/css/reset.css'/>">
+<link rel="stylesheet" href="<c:url value='/assets/admin/css/font.css'/>">
+<link rel="stylesheet" href="<c:url value='/assets/admin/css/style.css'/>">
 <!-- //css -->
 
 <script>
@@ -23,5 +25,8 @@
 </script>
 
 <!-- js -->
-
+<script type="text/javascript" src="<c:url value='/assets/admin/js/lib/jquery/jquery-1.12.4.min.js'/>"></script>
+<script type="text/javascript" src="<c:url value='/assets/admin/js/lib/jquery/jquery-ui.min.js'/>"></script>
+<script type="text/javascript" src="<c:url value='/assets/admin/js/lib/jquery/jquery.easing.min.js'/>"></script>
+<script type="text/javascript" src="<c:url value='/assets/admin/js/lib/jquery/common.js'/>"></script>
 <!-- //js -->

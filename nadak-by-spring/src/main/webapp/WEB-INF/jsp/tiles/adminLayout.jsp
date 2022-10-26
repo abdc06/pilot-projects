@@ -13,11 +13,11 @@
     <title><tiles:insertAttribute name="title"/></title>
     <tiles:insertAttribute name="header" />
 </head>
-<body class="stat">
-<div id="wrapper">
+<body>
+<div id="root">
     <main id="container">
         <!-- ============header========================== -->
-        <header id="header" class="header-gradient">
+        <header id="header">
             <tiles:insertAttribute name="top" />
         </header>
         <!-- ============//header========================== -->

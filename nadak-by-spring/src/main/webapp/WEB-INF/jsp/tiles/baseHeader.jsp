@@ -14,7 +14,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="format-detection" content="telephone=no">
 <!-- css -->
-
+<link rel="stylesheet" href="<c:url value='/assets/portal/css/nomalize.css'/>">
+<link rel="stylesheet" href="<c:url value='/assets/portal/css/layout.css'/>">
+<link rel="stylesheet" href="<c:url value='/assets/portal/css/main.css'/>">
 <!-- //css -->
 
 <script>
